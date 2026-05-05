@@ -30,7 +30,7 @@ export class ProfilePage {
   }
 
   async assertImageIsShown(imageUrl) {
-    await this.step(`Assert bio is shown`, async () => {
+    await this.step(`Assert image is shown`, async () => {
       await expect(this.userImage).toHaveAttribute('src', imageUrl);
     });
   }
